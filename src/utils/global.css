@@ -1,0 +1,21 @@
+:root {
+  --main-primary: #1a1b22;
+  --main-white: #ffffff;
+  --main-white-hover: #e8e8e8;
+  --blue-active: #2f71e5;
+  --blue-hover: #347eff;
+  --blue-click: #2a65cc;
+  --gray-deactive: #e6e8eb;
+  --gray-text: #b6bcbf;
+  --gray-border: #d1d2d6;
+  --overlay: #00000050;
+
+  --font-inter: 'Inter', Arial, sans-serif;
+  --font-roboto: 'Roboto', Arial, sans-serif;
+  --font-roboto-slab: 'Roboto Slab', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-roboto-slab);
+}
