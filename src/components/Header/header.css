@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid var(--main-primary);
+  color: var(--main-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 6.5rem;
+}
+
+.header__logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.header_black {
+  border-color: var(--main-primary);
+  color: var(--main-primary);
+}

@@ -1,3 +1,7 @@
 @import url('./vendor/normalize.css');
 @import url('./vendor/fonts/fonts.css');
 @import url('./utils/global.css');
+
+/* BLOCKS */
+@import url('./components/Header/header.css');
+@import url('./components/Navbar/navbar.css');
