@@ -10,9 +10,9 @@
   --gray-border: #d1d2d6;
   --overlay: #00000050;
 
-  --font-inter: 'Inter', Arial, sans-serif;
-  --font-roboto: 'Roboto', Arial, sans-serif;
-  --font-roboto-slab: 'Roboto Slab', Arial, sans-serif;
+  --font-inter: 'Inter', Arial, Helvetica, sans-serif;
+  --font-roboto: 'Roboto', Arial, Helvetica, sans-serif;
+  --font-roboto-slab: 'Roboto Slab', Times, serif;
 }
 
 body {
