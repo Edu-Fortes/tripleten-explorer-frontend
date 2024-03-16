@@ -31,3 +31,8 @@ h5,
 h6 {
   font-family: var(--font-roboto-slab);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

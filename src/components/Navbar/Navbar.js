@@ -1,12 +1,14 @@
+import { NavLink } from 'react-router-dom';
+
 export default function Navbar({ children }) {
   return (
     <nav className="navbar">
       <ul className="navbar__list">
         <li className="navbar__item">
-          <a href="/">Home</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li className="navbar__item">
-          <a href="/about">Artigos Salvos</a>
+          <NavLink to="saved-news">Artigos Salvos</NavLink>
         </li>
         <li>{children}</li>
       </ul>

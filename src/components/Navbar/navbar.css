@@ -18,6 +18,10 @@
   border-bottom: 3px solid transparent;
 }
 
+.navbar__item:has(.active) {
+  border-bottom-color: inherit;
+}
+
 .navbar__item_active {
   border-color: inherit;
 }
