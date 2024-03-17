@@ -1,0 +1,19 @@
+.frm-search {
+  margin: 0 26rem 5rem;
+  border-radius: 2rem;
+  background-color: var(--main-white);
+  display: flex;
+  justify-content: space-between;
+  width: 42%;
+}
+
+.frm-search__input {
+  border: none;
+  border-radius: 2rem;
+  padding: 1.3125rem 1.5rem;
+  width: 100%;
+}
+
+.frm-search__input:focus {
+  outline: none;
+}

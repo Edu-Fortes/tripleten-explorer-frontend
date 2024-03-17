@@ -6,3 +6,6 @@
 @import url('./components/App/app.css');
 @import url('./components/Header/header.css');
 @import url('./components/Navbar/navbar.css');
+@import url('./components/Hero/hero.css');
+@import url('./components/SearchForm/searchForm.css');
+@import url('./components/Button/button.css');

@@ -6,8 +6,8 @@ export default function Header({ children }) {
     <header
       className={location.pathname === '/' ? 'header' : 'header header_black'}
     >
-      <Link to="/">
-        <h1 className="header__logo">NewsExplorer</h1>
+      <Link to='/'>
+        <h1 className='header__logo'>NewsExplorer</h1>
       </Link>
       {children}
     </header>
