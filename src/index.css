@@ -9,5 +9,6 @@
 @import url('./components/Hero/hero.css');
 @import url('./components/SearchForm/searchForm.css');
 @import url('./components/Button/button.css');
+@import url('./components/Preloader/preloader.css');
 @import url('./components/Author/author.css');
 @import url('./components/Footer/footer.css');

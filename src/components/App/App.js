@@ -9,6 +9,8 @@ import SeachForm from '../SearchForm/SearchForm';
 import Button from '../Button/Button';
 import Author from '../Author/Author';
 import Footer from '../Footer/Footer';
+// import NewsCardList from '../NewsCardList/NewsCardList';
+import Preloader from '../Preloader/Preloader';
 
 export default function App() {
   return (
@@ -31,6 +33,7 @@ export default function App() {
                   </SeachForm>
                 </Hero>
               </main>
+              <Preloader />
               <Author />
             </>
           }
