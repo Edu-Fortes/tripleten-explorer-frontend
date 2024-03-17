@@ -9,13 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '*',
     element: <App />,
-    // children: [{ path: 'saved-news', element: <SavedNews /> }],
-  },
-  {
-    path: '/saved-news',
-    element: <SavedNews />,
+    children: [{ path: 'saved-news', element: <SavedNews /> }],
   },
 ]);
 

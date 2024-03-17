@@ -3,5 +3,6 @@
 @import url('./utils/global.css');
 
 /* BLOCKS */
+@import url('./components/App/app.css');
 @import url('./components/Header/header.css');
 @import url('./components/Navbar/navbar.css');
