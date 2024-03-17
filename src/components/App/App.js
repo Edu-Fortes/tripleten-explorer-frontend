@@ -8,6 +8,7 @@ import SavedNews from '../SavedNews/SavedNews';
 import SeachForm from '../SearchForm/SearchForm';
 import Button from '../Button/Button';
 import Author from '../Author/Author';
+import Footer from '../Footer/Footer';
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
         />
         <Route path='saved-news' element={<SavedNews />} />
       </Routes>
+      <Footer />
     </>
   );
 }
