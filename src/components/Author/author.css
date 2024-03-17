@@ -1,0 +1,26 @@
+.author {
+  padding: 5rem 6.5rem;
+  display: flex;
+}
+
+.author__image {
+  width: 464px;
+  height: 464px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author__text {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.author__title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-block: 3.1875rem 1.5rem;
+}
+
+.author__description {
+  font-size: 1.125rem;
+}

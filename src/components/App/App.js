@@ -7,6 +7,7 @@ import hero from '../../images/hero_clean.jpg';
 import SavedNews from '../SavedNews/SavedNews';
 import SeachForm from '../SearchForm/SearchForm';
 import Button from '../Button/Button';
+import Author from '../Author/Author';
 
 export default function App() {
   return (
@@ -20,14 +21,17 @@ export default function App() {
         <Route
           path='/'
           element={
-            <main>
-              <img src={hero} alt='Hero image' className='bg-image' />
-              <Hero>
-                <SeachForm>
-                  <Button label='Procurar' kind='blue' />
-                </SeachForm>
-              </Hero>
-            </main>
+            <>
+              <main>
+                <img src={hero} alt='Hero image' className='bg-image' />
+                <Hero>
+                  <SeachForm>
+                    <Button label='Procurar' kind='blue' />
+                  </SeachForm>
+                </Hero>
+              </main>
+              <Author />
+            </>
           }
         />
         <Route path='saved-news' element={<SavedNews />} />
