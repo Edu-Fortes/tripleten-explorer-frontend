@@ -5,6 +5,7 @@
 }
 
 .bg-preloader {
+  display: flex;
   background-color: var(--gray-bg);
   height: 17.625rem;
 }
