@@ -67,6 +67,7 @@ export default function App() {
               label={currentUser.name}
               classMod='crystal'
               onClick={handleLogout}
+              isLogged={isLogged}
             />
           )}
         </Navbar>
