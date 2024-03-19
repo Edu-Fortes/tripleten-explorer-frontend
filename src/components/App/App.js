@@ -7,11 +7,11 @@ import Hero from '../Hero/Hero';
 import Navbar from '../Navbar/Navbar';
 import SavedNews from '../SavedNews/SavedNews';
 import SeachForm from '../SearchForm/SearchForm';
-// import NewsCardList from '../NewsCardList/NewsCardList';
+import NewsCardList from '../NewsCardList/NewsCardList';
+// import Preloader from '../Preloader/Preloader';
 import Button from '../Button/Button';
 import Author from '../Author/Author';
 import Footer from '../Footer/Footer';
-import Preloader from '../Preloader/Preloader';
 import Modal from '../Modal/Modal';
 import AuthForm from '../AuthForm/AuthForm';
 
@@ -84,8 +84,8 @@ export default function App() {
                     <Button label='Procurar' classMod='blue' />
                   </SeachForm>
                 </Hero>
+                <NewsCardList />
               </main>
-              <Preloader />
               <Author />
             </>
           }
