@@ -27,7 +27,8 @@
 
 .button__crystal {
   background: transparent;
-  border: 1px solid var(--gray-border);
-  color: var(--main-white);
+  border: 1px solid;
+  border-color: inherit;
+  color: inherit;
   padding: 1rem 5.5rem;
 }

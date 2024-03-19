@@ -12,3 +12,5 @@
 @import url('./components/Preloader/preloader.css');
 @import url('./components/Author/author.css');
 @import url('./components/Footer/footer.css');
+@import url('./components/Modal/modal.css');
+@import url('./components/AuthForm/authForm.css');

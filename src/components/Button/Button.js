@@ -1,8 +1,8 @@
-export default function Button({ label, kind, onClick }) {
+export default function Button({ label, classMod, onClick }) {
   return (
     <button
-      type='button'
-      className={`button button__${kind}`}
+      type='submit'
+      className={`button button__${classMod}`}
       onClick={onClick}
     >
       {label}
