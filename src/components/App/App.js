@@ -70,7 +70,6 @@ export default function App() {
                 label={currentUser.name}
                 classMod='crystal'
                 onClick={handleLogout}
-                // isLogged={isLogged}
               />
             )}
           </Navbar>
@@ -81,7 +80,14 @@ export default function App() {
             element={
               <>
                 <main>
-                  <img src={hero} alt='Hero image' className='bg-image' />
+                  <figure className='background'>
+                    {' '}
+                    <img
+                      src={hero}
+                      alt='Hero image'
+                      className='background__image'
+                    />
+                  </figure>
                   <Hero>
                     <SeachForm>
                       <Button label='Procurar' classMod='blue' />
