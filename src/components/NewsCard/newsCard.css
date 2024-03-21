@@ -1,0 +1,87 @@
+.card {
+  background-color: var(--main-white);
+  border-radius: 10px;
+  box-shadow: 7px 7px 14px 1px rgba(0, 0, 0, 0.18);
+}
+
+.card__header {
+  position: relative;
+}
+
+.card__flag {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card__flag:hover .card__flag-icon {
+  stroke: #1a1b22;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.card__flag:hover + .card__tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card__fig {
+  margin: 0;
+}
+
+.card__tooltip {
+  position: absolute;
+  top: 1.7rem;
+  right: 4.5rem;
+  background-color: var(--main-white);
+  border-radius: 10px;
+  box-shadow: 7px 7px 14px 1px rgba(0, 0, 0, 0.18);
+  visibility: hidden;
+  opacity: 0;
+  padding: 0.6875rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card__tooltip:hover {
+  display: block;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__content {
+  padding: 1rem;
+}
+
+.card__title {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 0.75rem 0 0;
+}
+
+.card__time {
+  color: var(--gray-text);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.card__cite {
+  font-family: var(--roboto-slab);
+  font-weight: 700;
+  color: var(--gray-text);
+  text-transform: uppercase;
+  margin: 0;
+}

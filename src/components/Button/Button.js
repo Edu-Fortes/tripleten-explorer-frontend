@@ -1,4 +1,8 @@
-export default function Button({ label, classMod, onClick, isLogged }) {
+import { useContext } from 'react';
+import { IsLoggedContext } from '../../contexts/IsLogged';
+
+export default function Button({ label, classMod, onClick }) {
+  const isLogged = useContext(IsLoggedContext);
   return (
     <button
       type='submit'

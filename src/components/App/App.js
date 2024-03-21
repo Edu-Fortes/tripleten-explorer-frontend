@@ -14,6 +14,8 @@ import Author from '../Author/Author';
 import Footer from '../Footer/Footer';
 import Modal from '../Modal/Modal';
 import AuthForm from '../AuthForm/AuthForm';
+import NewsCard from '../NewsCard/NewsCard';
+import { IsLoggedContext } from '../../contexts/IsLogged';
 
 export default function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -54,53 +56,62 @@ export default function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <Header>
-        <Navbar isLogged={isLogged}>
-          {!isLogged ? (
-            <Button
-              label='Entrar'
-              classMod='crystal'
-              onClick={handleOpenModal}
-            />
-          ) : (
-            <Button
-              label={currentUser.name}
-              classMod='crystal'
-              onClick={handleLogout}
-              isLogged={isLogged}
-            />
-          )}
-        </Navbar>
-      </Header>
-      <Routes>
-        <Route
-          path='/'
-          element={
-            <>
-              <main>
-                <img src={hero} alt='Hero image' className='bg-image' />
-                <Hero>
-                  <SeachForm>
-                    <Button label='Procurar' classMod='blue' />
-                  </SeachForm>
-                </Hero>
-                <NewsCardList />
-              </main>
-              <Author />
-            </>
-          }
-        />
-        <Route path='saved-news' element={<SavedNews />} />
-      </Routes>
-      <Footer />
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-        <AuthForm
-          isLogged={handleIsLogged}
-          onClose={handleCloseModal}
-          isLoginForm={isLoginForm}
-          changeForm={handleChangeForm}
-        />
-      </Modal>
+      <IsLoggedContext.Provider value={isLogged}>
+        <Header>
+          <Navbar isLogged={isLogged}>
+            {!isLogged ? (
+              <Button
+                label='Entrar'
+                classMod='crystal'
+                onClick={handleOpenModal}
+              />
+            ) : (
+              <Button
+                label={currentUser.name}
+                classMod='crystal'
+                onClick={handleLogout}
+                // isLogged={isLogged}
+              />
+            )}
+          </Navbar>
+        </Header>
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <>
+                <main>
+                  <img src={hero} alt='Hero image' className='bg-image' />
+                  <Hero>
+                    <SeachForm>
+                      <Button label='Procurar' classMod='blue' />
+                    </SeachForm>
+                  </Hero>
+                  <NewsCardList>
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                    <NewsCard />
+                  </NewsCardList>
+                </main>
+                <Author />
+              </>
+            }
+          />
+          <Route path='saved-news' element={<SavedNews />} />
+        </Routes>
+        <Footer />
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+          <AuthForm
+            isLogged={handleIsLogged}
+            onClose={handleCloseModal}
+            isLoginForm={isLoginForm}
+            changeForm={handleChangeForm}
+          />
+        </Modal>
+      </IsLoggedContext.Provider>
     </CurrentUserContext.Provider>
   );
 }
