@@ -26,6 +26,10 @@ export default function AuthForm({
     const rawUserData = localStorage.getItem('user');
     const userData = JSON.parse(rawUserData);
 
+    if (!userData) {
+      console.log('Usuário não cadastrado');
+      return;
+    }
     if (!userEmail || !userPassword) {
       console.log('Preencha todos os campos');
       return;
